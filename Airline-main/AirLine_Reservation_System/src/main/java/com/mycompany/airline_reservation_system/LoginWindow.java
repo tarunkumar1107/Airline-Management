@@ -138,7 +138,7 @@ public class LoginWindow extends javax.swing.JInternalFrame {
             String Ps=password.getText();
             String user=username.getText();
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","P3008#iyush");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","tarun");
             pre=con.prepareStatement("Select *from user where UserName=?");
             pre.setString(1,user);
             ResultSet rs=pre.executeQuery();
