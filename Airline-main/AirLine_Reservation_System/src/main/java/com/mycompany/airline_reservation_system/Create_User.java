@@ -34,7 +34,7 @@ public class Create_User extends javax.swing.JInternalFrame {
     {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","P3008#iyush");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","tarun");
             Statement s=con.createStatement();
             ResultSet rs=s.executeQuery("Select MAX(UserID) from User");
             rs.next();
