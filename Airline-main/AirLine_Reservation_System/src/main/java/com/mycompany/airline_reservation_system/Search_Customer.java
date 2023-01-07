@@ -297,7 +297,7 @@ public class Search_Customer extends javax.swing.JInternalFrame {
             String id=CustomerID.getText();
             
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","P3008#iyush");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/AirlineDB","root","tarun");
             pre=con.prepareStatement("select *from Customer where idCustomer = ?");
             pre.setString(1,id);
             ResultSet rs=pre.executeQuery();
